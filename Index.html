@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hernández Perfumería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+ <h1>Hernández Perfumería</h1>
+ <nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#productos">Perfumes</a>
+  <a href="#carrito">Carrito</a>
+  <a href="#contacto">Contacto</a>
+ </nav>
+</header>
+
+<section id="inicio" class="hero">
+ <div>
+  <h2>El Futuro del <span>Perfume</span></h2>
+  <p>Elegancia, lujo y poder en cada esencia.</p>
+  <button onclick="irPerfumes()">Explorar Fragancias</button>
+ </div>
+</section>
+
+<!-- BIENVENIDA Y QUIÉNES SOMOS -->
+<section style="padding:40px;text-align:center;">
+ <h2>Bienvenidos</h2>
+ <p>
+  Bienvenidos a <strong>Hernández Perfumería</strong>, un espacio donde la elegancia,
+  la calidad y el buen gusto se unen para ofrecerte fragancias que dejan huella.
+  Cada aroma ha sido cuidadosamente seleccionado para resaltar tu personalidad
+  y acompañarte en cada momento especial.
+ </p>
+
+ <h2>¿Quiénes Somos?</h2>
+ <p>
+  En <strong>Hernández Perfumería</strong> somos una <strong>perfumería de alto prestigio</strong>,
+  dedicada a ofrecer fragancias originales que reflejan elegancia, distinción y personalidad.
+  Nos especializamos en perfumes <strong>árabes, nichos y de diseñador</strong>, cuidadosamente
+  seleccionados para garantizar <strong>autenticidad, calidad superior y exclusividad</strong>.
+  <br><br>
+  Nuestro compromiso es brindarte una <strong>experiencia de compra refinada y confiable</strong>,
+  con atención personalizada y precios justos, para que cada fragancia que elijas se convierta
+  en una expresión única de tu estilo.
+ </p>
+</section>
+
+<main>
+
+<section id="productos">
+ <h2>Nuestros Perfumes</h2>
+ <div class="product-container"></div>
+</section>
+
+<section id="carrito">
+ <h2>Carrito de Compras</h2>
+ <div id="cart"></div>
+
+ <h3 id="total">Total: $0</h3>
+
+ <label>Método de pago</label>
+ <select id="payment" onchange="mostrarTarjeta()">
+  <option value="Efectivo">💵 Efectivo</option>
+  <option value="Transferencia">🏦 Transferencia</option>
+  <option value="Tarjeta">💳 Tarjeta</option>
+ </select>
+
+ <div id="datos-tarjeta" style="display:none;margin-top:15px;">
+  <input type="text" placeholder="Número de tarjeta">
+  <input type="text" placeholder="Nombre en la tarjeta">
+  <input type="text" placeholder="Fecha de vencimiento">
+  <input type="text" placeholder="CVV">
+ </div>
+
+ <button onclick="pagar()">Pagar</button>
+</section>
+
+<section id="contacto">
+ <h2>Contacto & Redes</h2>
+ <div class="social">
+  <a href="https://instagram.com/cristian_hernandez87" target="_blank">Instagram</a>
+  <a href="https://www.tiktok.com/@hernandez_perfumeria" target="_blank">TikTok</a>
+  <a href="https://facebook.com/hernandez_perfumeria" target="_blank">Facebook</a>
+  <a href="https://wa.me/18296293909" target="_blank">WhatsApp</a>
+ </div>
+</section>
+
+</main>
+
+<section style="text-align:center;padding:40px;">
+ <h2>Ubicación</h2>
+ <p>
+  📍 <strong>Sánchez Ramírez, Cotuí</strong><br>
+  Calle Sánchez #2, al lado de Manzana Celular.<br>
+  Frente al Parque Duarte.
+ </p>
+</section>
+
+<footer>
+ © 2026 — Hernández Perfumería | Elegancia del futuro
+</footer>
+
+<script src="J.js"></script>
+</body>
+</html>
+

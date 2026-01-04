@@ -1,0 +1,165 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Poppins,Arial
+}
+
+body{
+ background:#050505;
+ color:white;
+}
+
+/* HEADER */
+header{
+ background:rgba(0,0,0,.7);
+ padding:20px;
+ text-align:center;
+ border-bottom:2px solid purple;
+}
+
+nav a{
+ margin:0 12px;
+ text-decoration:none;
+ color:white;
+}
+
+nav a:hover{
+ color:#9e5bff
+}
+
+/* HERO */
+.hero{
+ height:70vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ background:linear-gradient(#000,#111);
+}
+
+.hero span{
+ color:#9e5bff
+}
+
+.hero button{
+ margin-top:20px;
+ padding:10px 20px;
+ border:1px solid #9e5bff;
+ background:transparent;
+ color:white;
+ border-radius:25px;
+}
+
+.hero button:hover{
+ background:#9e5bff
+}
+
+/* TITULOS */
+h2{
+ text-align:center;
+ margin:40px 0
+}
+
+/* PRODUCTOS */
+.product-container{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+}
+
+.product{
+ background:rgba(0,0,0,.6);
+ border:1px solid white;
+ margin:10px;
+ width:220px;
+ padding:15px;
+ transition:.4s;
+ opacity:0;
+ transform:translateY(40px);
+}
+
+.product.show{
+ opacity:1;
+ transform:translateY(0);
+}
+
+.product:hover{
+ transform:scale(1.06);
+ box-shadow:0 0 15px #9e5bff;
+}
+
+.product img{
+ width:100%;
+ border-radius:10px;
+}
+
+/* BOTONES */
+.product button{
+ margin-top:10px;
+ width:100%;
+ padding:8px;
+ background:green;
+ border:none;
+ color:white;
+}
+
+.product button:hover{
+ background:#00c900
+}
+
+/* CARRITO */
+#carrito{
+ background:rgba(0,0,0,.7);
+ padding:20px;
+ margin:40px;
+ border-radius:10px;
+}
+
+#cart p{
+ font-size:14px
+}
+
+/* FORMULARIO */
+form{
+ display:flex;
+ flex-direction:column;
+ width:300px;
+ margin:auto;
+}
+
+form input,
+textarea{
+ margin:5px 0;
+ padding:8px;
+ border-radius:5px;
+ border:none;
+}
+
+form button{
+ margin-top:5px;
+ padding:8px;
+ border:none;
+ background:#9e5bff;
+ color:white;
+}
+
+/* SOCIAL */
+.social{
+ text-align:center;
+ margin-top:20px
+}
+
+.social a{
+ margin:10px;
+ color:#9e5bff;
+ text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+ text-align:center;
+ padding:25px;
+ border-top:1px solid #444;
+ margin-top:40px;
+}
